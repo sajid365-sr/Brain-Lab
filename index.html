@@ -26,12 +26,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;500;600;700&family=Mukta:wght@200;300;400;500;600;700;800&family=Oleo+Script+Swash+Caps:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- Just one css command -->
-<style>
-  body{
-    font-family: 'Poppins', sans-serif;
-  }
-</style>
+<!-- custon CSS -->
+
+<link rel="stylesheet" href="style.css">
 
   </head>
   <body>
@@ -68,8 +65,36 @@
             <li><a href="#" class="nav-link px-3 link-secondary">Register</a></li>
         </ul>
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
             <button type="button" class="btn btn-primary">Sign-up</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content w-100 mx-auto ">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3 row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label text-start">Email</label>
+                      <div class="col-sm-12 col-lg-9 col-11">
+                        <input type="text"  class="form-control" id="staticEmail" placeholder="email@example.com">
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label text-start">Password</label>
+                      <div class="col-sm-12 col-lg-9 col-11">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="******">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
     </div>
@@ -205,127 +230,138 @@
           content of a page when looking at its layout.</span>
     </div>
     <!-- Courses -->
-    <div class="row g-lg-4 gap-4 gap-lg-0">
+    <div class="row g-4 g-lg-3">
 
       <!-- course 1-->
 
-    <div class="col-11 col-sm-12 col-lg-6 d-flex flex-column flex-sm-row mx-auto flex-lg-row border border-2 p-0  rounded">
-      <div class="w-25 d-none d-lg-block d-sm-block">
-        <img src="images/Course/ArtificialIntelligence.png" class="w-100 rounded" alt="">
-      </div>
-      <!-- mobile -->
-      <div class="container d-lg-none d-sm-none p-0">
-      <img src="images/Course/ArtificialIntelligenceMobile.png" class="w-100 rounded-2 "  alt="">
+    <div class="col-lg-6">
+      <div class="d-sm-flex border border-2 p-0 rounded">
+        <div class="w-25 d-none d-sm-block">
+          <img src="images/Course/ArtificialIntelligence.png" class="w-100 h-100 rounded-start" alt="">
+        </div>
+        <!-- mobile -->
+        <div class="w-100 d-sm-none">
+        <img src="images/Course/ArtificialIntelligenceMobile.png" class="w-100 rounded-top "  alt="">
+        </div>
+        
+        <div class="w-75 p-3">
+          <h4 class="fw-bold">Artificial Intelligence</h4 class="fw-bold">
+            <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
+              <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
+            
+        </div>
       </div>
       
-      <div class="w-75 ps-4 pt-3 pe-4 pt-sm-2">
-        <h4 class="fw-bold">Fundamental Of UI/UX Design</h4 class="fw-bold">
-          <span class="text-secondary text">Some quick example text to build on the card title
-            and make up the bulk of the card.</span>
-            <p class="text-primary fw-bold text-opacity-75 d-none d-lg-block ">Price : 20$</p>
-            <!-- mobile -->
-            <p class="text-primary fw-bold text-opacity-75 fs-4 d-lg-none mb-sm-0 pt-sm-0 pb-sm-0 pt-3  pb-4">Price : 20$</p>
-      </div>
     </div>
 
     <!-- course 2-->
 
-    <div class="col-11 col-sm-12 col-lg-6 d-flex flex-column flex-sm-row mx-auto flex-lg-row border border-2 p-0  rounded">
-      <div class="w-25 d-none d-lg-block d-sm-block">
-        <img src="images/Course/BlockChain.png" class="w-100 rounded " alt="">
+    <div class="col-lg-6">
+      <div class="d-sm-flex border border-2 p-0 rounded">
+        <div class="w-25 d-none d-sm-block">
+          <img src="images/Course/BlockChain.png" class="w-100 h-100 rounded-start" alt="">
+        </div>
+        <!-- mobile -->
+        <div class="w-100 d-sm-none">
+        <img src="images/Course/BlockChainMobile.png" class="w-100 rounded-top "  alt="">
+        </div>
+        
+        <div class="w-75 p-3">
+          <h4 class="fw-bold">Blockchain Technology</h4 class="fw-bold">
+            <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
+              <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
+            
+        </div>
       </div>
-      <!-- mobile -->
-      <div class="container d-lg-none d-sm-none p-0">
-      <img src="images/Course/BlockChainMobile.png" class="w-100 rounded-2"  alt="">
-      </div>
-      <div class="w-75 ps-4 pt-3 pe-4 pt-sm-2">
-        <h4 class="fw-bold">Fundamental Of UI/UX Design</h4 class="fw-bold">
-        <span class="text-secondary text">Some quick example text to build on the card title
-          and make up the bulk of the card.</span>
-          <p class="text-primary fw-bold text-opacity-75 d-none d-lg-block">Price : 20$</p>
-            <!-- mobile -->
-            <p class="text-primary fw-bold text-opacity-75 fs-4 d-lg-none mb-sm-0 pt-sm-0 pb-sm-0 pt-3 pb-4">Price : 20$</p>
-      </div>
+      
     </div>
 
     <!-- course 3-->
 
-    <div class="col-11 col-sm-12 col-lg-6 d-flex flex-column flex-sm-row mx-auto flex-lg-row border border-2 p-0  rounded">
-      <div class="w-25 d-none d-lg-block d-sm-block">
-        <img src="images/Course/DataScience.png" class="w-100 rounded" alt="">
+    <div class="col-lg-6">
+      <div class="d-sm-flex border border-2 p-0 rounded">
+        <div class="w-25 d-none d-sm-block">
+          <img src="images/Course/DataScience.png" class="w-100 h-100 rounded-start" alt="">
+        </div>
+        <!-- mobile -->
+        <div class="w-100 d-sm-none">
+        <img src="images/Course/DataScienceMobile.png" class="w-100 rounded-top "  alt="">
+        </div>
+        
+        <div class="w-75 p-3">
+          <h4 class="fw-bold">Data Science</h4 class="fw-bold">
+            <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
+              <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
+            
+        </div>
       </div>
-      <!-- mobile -->
-      <div class="container d-lg-none d-sm-none p-0">
-        <img src="images/Course/BlockChainMobile.png" class="w-100 rounded-2"  alt="">
-        </div>
-        <div class="w-75 ps-4 pt-3 pe-4 pt-sm-2">
-          <h4 class="fw-bold">Fundamental Of UI/UX Design</h4 class="fw-bold">
-          <span class="text-secondary text">Some quick example text to build on the card title
-            and make up the bulk of the card.</span>
-            <p class="text-primary fw-bold text-opacity-75 d-none d-lg-block">Price : 20$</p>
-              <!-- mobile -->
-              <p class="text-primary fw-bold text-opacity-75 fs-4 d-lg-none mb-sm-0 pt-sm-0 pb-sm-0 pt-3 pb-4">Price : 20$</p>
-        </div>
+      
     </div>
 
     <!-- course 4-->
     
-    <div class="col-11  col-lg-6 d-flex flex-column d-lg-block d-block  mx-auto  border border-2 p-0 d-sm-none rounded">
-      <div class="w-25 d-none d-lg-block float-lg-start ">
-        <img src="images/Course/MachineLearning.png" class="w-100 rounded " alt="">
+    <div class="col-lg-6 d-none d-sm-block">
+      <div class="d-sm-flex border border-2 p-0 rounded">
+        <div class="w-25 d-none d-sm-block">
+          <img src="images/Course/MachineLearning.png" class="w-100 h-100 rounded-start" alt="">
+        </div>
+        <!-- mobile -->
+        <div class="w-100 d-sm-none">
+        <img src="images/Course/MachineLearningMobile.png" class="w-100 rounded-top "  alt="">
+        </div>
+        
+        <div class="w-75 p-3">
+          <h4 class="fw-bold">Machine Learning</h4 class="fw-bold">
+            <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
+              <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
+            
+        </div>
       </div>
-      <!-- mobile -->
-      <div class="container d-lg-none  p-0">
-        <img src="images/Course/BlockChainMobile.png" class="w-100 rounded-2"  alt="">
-        </div>
-        <div class="w-75 ps-4 pt-3 pe-4 pt-sm-2 d-block d-lg-block float-lg-end">
-          <h4 class="fw-bold">Fundamental Of UI/UX Design</h4 class="fw-bold">
-          <span class="text-secondary text">Some quick example text to build on the card title
-            and make up the bulk of the card.</span>
-            <p class="text-primary fw-bold text-opacity-75 d-none d-lg-block">Price : 20$</p>
-              <!-- mobile -->
-              <p class="text-primary fw-bold text-opacity-75 fs-4 d-lg-none mb-sm-0 pt-sm-0 pb-sm-0 pt-3 pb-4">Price : 20$</p>
-        </div>
+      
     </div>
 
     <!-- course 5-->
     
-    <div class="col-11 col-sm-12 col-lg-6 d-flex flex-column d-block d-lg-block  d-sm-none  mx-auto border border-2 p-0  rounded">
-      <div class="w-25 d-none d-lg-block float-lg-start ">
-        <img src="images/Course/NeuralNetwork.png" class="w-100 rounded" alt="">
+    <div class="col-lg-6 d-none d-lg-block">
+      <div class="d-sm-flex border border-2 p-0 rounded">
+        <div class="w-25 d-none d-sm-block">
+          <img src="images/Course/NeuralNetwork.png" class="w-100 h-100 rounded-start" alt="">
+        </div>
+        <!-- mobile -->
+        <div class="w-100 d-sm-none">
+        <img src="images/Course/NeuralNetworkMobile.png" class="w-100 rounded-top "  alt="">
+        </div>
+        
+        <div class="w-75 p-3">
+          <h4 class="fw-bold">Neural Network</h4 class="fw-bold">
+            <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
+              <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
+            
+        </div>
       </div>
-      <!-- mobile -->
-      <div class="container d-lg-none  p-0 ">
-      <img src="images/Course/NeuralNetworkMobile.png" class="w-100 rounded-2"  alt="">
-      </div>
-      <div class="w-75 ps-4 pt-3 pe-4 d-block d-lg-block float-lg-end">
-        <h4 class="fw-bold">Fundamental Of UI/UX Design</h4 class="fw-bold">
-        <span class="text-secondary text">Some quick example text to build on the card title
-          and make up the bulk of the card.</span>
-          <p class="text-primary fw-bold text-opacity-75 d-none d-lg-block">Price : 20$</p>
-            <!-- mobile -->
-            <p class="text-primary fw-bold text-opacity-75 fs-4 d-lg-none  pt-sm-0  pt-3 pb-4">Price : 20$</p>
-      </div>
+      
     </div>
 
     <!-- course 6-->
 
-    <div class="col-11 col-sm-12 col-lg-6 d-flex flex-column d-block d-lg-block  d-sm-none  mx-auto border border-2 p-0  rounded">
-      <div class="w-25 d-none d-lg-block float-lg-start  ">
-        <img src="images/Course/QuantumComputing.png" class="w-100 rounded" alt="">
+    <div class="col-lg-6 d-none d-lg-block">
+      <div class="d-sm-flex border border-2 p-0 rounded">
+        <div class="w-25 d-none d-sm-block">
+          <img src="images/Course/QuantumComputing.png" class="w-100 h-100 rounded-start" alt="">
+        </div>
+        <!-- mobile -->
+        <div class="w-100 d-sm-none">
+        <img src="images/Course/QuantumComputingMobile.png" class="w-100 rounded-top "  alt="">
+        </div>
+        
+        <div class="w-75 p-3">
+          <h4 class="fw-bold">Quantum Computing</h4 class="fw-bold">
+            <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
+              <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
+            
+        </div>
       </div>
-      <!-- mobile -->
-      <div class="container d-lg-none  p-0">
-      <img src="images/Course/QuantumComputingMobile.png" class="w-100 rounded-2"  alt="">
-      </div>
-      <div class="w-75 ps-4 pt-3 pe-4 float-lg-end">
-        <h4 class="fw-bold">Fundamental Of UI/UX Design</h4 class="fw-bold">
-        <span class="text-secondary text">Some quick example text to build on the card title
-          and make up the bulk of the card.</span>
-          <p class="text-primary fw-bold text-opacity-75 d-none d-lg-block">Price : 20$</p>
-            <!-- mobile -->
-            <p class="text-primary fw-bold text-opacity-75 fs-4 d-lg-none  pt-sm-0  pt-3 pb-4">Price : 20$</p>
-      </div>
+      
     </div>
     
     </div>
@@ -430,7 +466,7 @@ randomised words  which...<span class="text-primary">See More</span>
 <section class="container my-5 p-lg-0 ">
   <div class="row  bg-primary p-lg-5  rounded mx-0 d-flex flex-column flex-lg-row align-items-center">
     <div class="col-6  p-0 text-white text-opacity-75">
-      <h1 class="py-4 text-sm-center text-lg-start">Ready to join?</h1>
+      <h1 class="py-4 text-sm-center text-center text-lg-start">Ready to join?</h1>
       <p class="text-center text-lg-start">It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout</p>
     </div>
@@ -666,7 +702,7 @@ randomised words  which...<span class="text-primary">See More</span>
 
   <!-- Accordion starts -->
 
-  <div class="accordion" id="accordionExample">
+  <div class="accordion accordion-flush" id="accordionExample">
 
     <!-- one -->
 
