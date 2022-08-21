@@ -36,27 +36,25 @@
 <!-- Navbar Starts -->
 
 <nav class="navbar navbar-expand-lg">
-    <div class="container gap-5">
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <img src="images/Icons/cloud (3).png" class="me-2" alt="">
+    <div class="container">
+      <!-- LOGO -->
+          <div class="d-flex">
+            <img src="images/Icons/cloud (3).png" class="me-3" alt="">
             <div>
-                <h3 class="fw-bolder mb-0">Brain Lab</h3>
-            <span class="fw-semibold text-secondary">The Ultimate Power Soruce</span>
-            </div>
-          </a>
+              <h3 class="fw-bolder mb-0">Brain Lab</h3>
+          <span class="fw-semibold text-secondary">The Ultimate Power Soruce</span>
+          </div>
+          </div>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        data-bs-target="#responsiveNab"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="responsiveNab">
+        <ul class="navbar-nav ms-auto">
             <li><a href="#" class="nav-link px-3 link-secondary">Home</a></li>
             <li><a href="#" class="nav-link px-3 link-secondary">Courses</a></li>
             <li><a href="#" class="nav-link px-3 link-secondary">Deals</a></li>
@@ -64,6 +62,8 @@
             <li><a href="#" class="nav-link px-3 link-secondary">About</a></li>
             <li><a href="#" class="nav-link px-3 link-secondary">Register</a></li>
         </ul>
+
+        <!-- MODAL -->
         <div class="col-md-3 text-end">
             <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
             <button type="button" class="btn btn-primary">Sign-up</button>
@@ -104,116 +104,63 @@
 
 <!-- Top banner starts -->
 
-<div id="carouselExampleCaptions" class="carousel slide container my-5  " data-bs-ride="false">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+
+
+<!-- Slider start -->
+
+<section class="container mt-4">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Carousel Stars -->
+    <div class="carousel-inner">
+      <!-- Item 1 -->
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="images/Cover/Banner.png" class="d-block w-100 rounded" alt="...">
+        <div class="carousel-caption d-none d-md-block pb-lg-5 pb-3">
+          <h1>Get Started Digital Learning</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable
+            content of a page when looking at its layout.</p>
+            <button class="btn btn-primary px-4 py-2 text-white">Get Started</button>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/Cover/DataScience.png" class="d-block w-100 rounded" alt="...">
+        <div class="carousel-caption d-none d-md-block pb-lg-5 pb-3">
+          <h1>Torture the data, and it will confess to anything.</h1>
+          <p>Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions.</p>
+            <button class="btn btn-primary px-4 py-2 text-white">Get Started</button>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="images/Cover/Blockchain.png" class="d-block w-100 rounded" alt="...">
+        <div class="carousel-caption d-none d-md-block pb-lg-5 pb-3">
+          <h1>Everything will be tokenized and connected by a blockchain one day.</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable
+            content of a page when looking at its layout.</p>
+            <button class="btn btn-primary px-4 py-2 text-white">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-<!-- Carousel item -->
+</section>
 
-  <div class="carousel-inner rounded">
-
-<!-- Carousel item 1 -->
-
-    <div class="carousel-item active position-relative ">
-      <img src="images/Cover/Banner.png" class="d-lg-block  d-none w-100 " alt="">
-      <img src="images/Cover/bannerMobile.png" class="d-lg-none w-100"  alt="">
-      <div class="carousel-caption d-none d-lg-block d-sm-none top-50 ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-      <!-- Mobile -->
-      <div class="carousel-caption d-lg-none d-sm-none position-absolute ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-      <!-- Tablet -->
-      <div class="carousel-caption d-none d-lg-none d-sm-block top-25 ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-    </div>
-
-<!-- Carousel item 2 -->
-
-    <div class="carousel-item position-relative ">
-      <img src="images/Cover/DataScience.png" class="d-lg-block d-none w-100 " alt="">
-      <img src="images/Cover/DataScienceMobile.png" class="d-lg-none w-100"  alt="">
-      <div class="carousel-caption d-none d-lg-block d-sm-none top-50 ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-      <!-- Mobile -->
-      <div class="carousel-caption d-lg-none  d-sm-none position-absolute ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-      <!-- Tablet -->
-      <div class="carousel-caption d-none d-lg-none d-sm-block top-25 ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-    </div>
-
-<!-- Carousel item 3 -->
-
-    <div class="carousel-item position-relative">
-      <img src="images/Cover/Blockchain.png" class="d-lg-block d-none w-100 " alt="">
-      <img src="images/Cover/BlockchainMobile.png" class="d-lg-none w-100"  alt="">
-      <div class="carousel-caption d-none d-sm-none d-lg-block top-50 ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-      <!-- Mobile -->
-      <div class="carousel-caption d-lg-none d-sm-none d-block position-absolute ">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-      <!-- Tablet -->
-      <div class="carousel-caption d-none d-lg-none d-sm-block top-25">
-        <h1>Get Started Digital
-          Learning</h1>
-        <p class="lg-py-3 py-0">It is a long established fact that a reader will be distracted by the readable
-          content of a page when looking at its layout.</p>
-          <button class="btn btn-primary lg-px-4 lg-py-2 text-white">Get Started</button>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+<!-- Slider end -->
 
 <!-- Top banner ends -->
 
@@ -230,21 +177,22 @@
           content of a page when looking at its layout.</span>
     </div>
     <!-- Courses -->
-    <div class="row g-4 g-lg-3">
+    <div class="row g-4">
 
       <!-- course 1-->
 
     <div class="col-lg-6">
       <div class="d-sm-flex border border-2 p-0 rounded">
-        <div class="w-25 d-none d-sm-block">
-          <img src="images/Course/ArtificialIntelligence.png" class="w-100 h-100 rounded-start" alt="">
+        <!-- image -->
+        <div class="w-35 d-none d-sm-block">
+          <img src="images/Course/ArtificialIntelligence.png" class="w-100 h-100 rounded" alt="">
         </div>
-        <!-- mobile -->
+        <!-- mobile image-->
         <div class="w-100 d-sm-none">
-        <img src="images/Course/ArtificialIntelligenceMobile.png" class="w-100 rounded-top "  alt="">
+        <img src="images/Course/ArtificialIntelligenceMobile.png" class="w-100 rounded "  alt="">
         </div>
-        
-        <div class="w-75 p-3">
+        <!-- body -->
+        <div class="w-65 p-3">
           <h4 class="fw-bold">Artificial Intelligence</h4 class="fw-bold">
             <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
               <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
@@ -258,15 +206,16 @@
 
     <div class="col-lg-6">
       <div class="d-sm-flex border border-2 p-0 rounded">
-        <div class="w-25 d-none d-sm-block">
-          <img src="images/Course/BlockChain.png" class="w-100 h-100 rounded-start" alt="">
+        <!-- image -->
+        <div class="w-35 d-none d-sm-block">
+          <img src="images/Course/BlockChain.png" class="w-100 h-100 rounded" alt="">
         </div>
-        <!-- mobile -->
+        <!-- mobile image -->
         <div class="w-100 d-sm-none">
-        <img src="images/Course/BlockChainMobile.png" class="w-100 rounded-top "  alt="">
+        <img src="images/Course/BlockChainMobile.png" class="w-100 rounded"  alt="">
         </div>
-        
-        <div class="w-75 p-3">
+        <!-- body -->
+        <div class="w-65 p-3">
           <h4 class="fw-bold">Blockchain Technology</h4 class="fw-bold">
             <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
               <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
@@ -280,15 +229,16 @@
 
     <div class="col-lg-6">
       <div class="d-sm-flex border border-2 p-0 rounded">
-        <div class="w-25 d-none d-sm-block">
-          <img src="images/Course/DataScience.png" class="w-100 h-100 rounded-start" alt="">
+        <!-- image -->
+        <div class="w-35 d-none d-sm-block">
+          <img src="images/Course/DataScience.png" class="w-100 h-100 rounded" alt="">
         </div>
-        <!-- mobile -->
+        <!-- mobile image-->
         <div class="w-100 d-sm-none">
-        <img src="images/Course/DataScienceMobile.png" class="w-100 rounded-top "  alt="">
+        <img src="images/Course/DataScienceMobile.png" class="w-100 rounded"  alt="">
         </div>
-        
-        <div class="w-75 p-3">
+        <!-- body -->
+        <div class="w-65 p-3">
           <h4 class="fw-bold">Data Science</h4 class="fw-bold">
             <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
               <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
@@ -302,15 +252,16 @@
     
     <div class="col-lg-6 d-none d-sm-block">
       <div class="d-sm-flex border border-2 p-0 rounded">
-        <div class="w-25 d-none d-sm-block">
-          <img src="images/Course/MachineLearning.png" class="w-100 h-100 rounded-start" alt="">
+        <!-- image -->
+        <div class="w-35 d-none d-sm-block">
+          <img src="images/Course/MachineLearning.png" class="w-100 h-100 rounded" alt="">
         </div>
-        <!-- mobile -->
+        <!-- mobile image-->
         <div class="w-100 d-sm-none">
-        <img src="images/Course/MachineLearningMobile.png" class="w-100 rounded-top "  alt="">
+        <img src="images/Course/MachineLearningMobile.png" class="w-100 rounded"  alt="">
         </div>
-        
-        <div class="w-75 p-3">
+        <!-- body -->
+        <div class="w-65 p-3">
           <h4 class="fw-bold">Machine Learning</h4 class="fw-bold">
             <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
               <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
@@ -324,15 +275,16 @@
     
     <div class="col-lg-6 d-none d-lg-block">
       <div class="d-sm-flex border border-2 p-0 rounded">
-        <div class="w-25 d-none d-sm-block">
-          <img src="images/Course/NeuralNetwork.png" class="w-100 h-100 rounded-start" alt="">
+        <!-- image -->
+        <div class="w-35 d-none d-sm-block">
+          <img src="images/Course/NeuralNetwork.png" class="w-100 h-100 rounded" alt="">
         </div>
-        <!-- mobile -->
+        <!-- mobile image-->
         <div class="w-100 d-sm-none">
-        <img src="images/Course/NeuralNetworkMobile.png" class="w-100 rounded-top "  alt="">
+        <img src="images/Course/NeuralNetworkMobile.png" class="w-100 rounded"  alt="">
         </div>
-        
-        <div class="w-75 p-3">
+        <!-- body -->
+        <div class="w-65 p-3">
           <h4 class="fw-bold">Neural Network</h4 class="fw-bold">
             <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
               <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
@@ -346,15 +298,16 @@
 
     <div class="col-lg-6 d-none d-lg-block">
       <div class="d-sm-flex border border-2 p-0 rounded">
-        <div class="w-25 d-none d-sm-block">
-          <img src="images/Course/QuantumComputing.png" class="w-100 h-100 rounded-start" alt="">
+        <!-- image -->
+        <div class="w-35 d-none d-sm-block">
+          <img src="images/Course/QuantumComputing.png" class="w-100 h-100 rounded" alt="">
         </div>
-        <!-- mobile -->
+        <!-- mobile image-->
         <div class="w-100 d-sm-none">
-        <img src="images/Course/QuantumComputingMobile.png" class="w-100 rounded-top "  alt="">
+        <img src="images/Course/QuantumComputingMobile.png" class="w-100 rounded"  alt="">
         </div>
-        
-        <div class="w-75 p-3">
+        <!-- body -->
+        <div class="w-65 p-3">
           <h4 class="fw-bold">Quantum Computing</h4 class="fw-bold">
             <span class="text-secondary text py-2">Some quick example text to build on the card title and make up the bulk of the card.</span>
               <p class="text-primary fw-bold text-opacity-75 lead py-3 mb-0">Price : 20$</p>
@@ -379,9 +332,12 @@
 <!-- Explore Section starts -->
 
 <section class="container p-lg-0 p-sm-0 my-5">
-  <div class="row  mx-auto mx-sm-0">
-    <div class=" col-lg-5 col-sm-6  pe-0 ps-lg-0 d-none d-lg-block d-sm-none ">
-<img src="images/Cover/working.png" class="w-100" alt="">
+  <div class="row">
+    <div class="col px-0">
+      <div class="d-none d-sm-block">
+        <img src="images/Cover/Raw/annie-spratt-MChSQHxGZrQ-unsplash.jpg" class="img-fluid h-100" alt="">
+      </div>
+
     </div>
 
     <!-- Mobile -->
@@ -390,38 +346,39 @@
       </div>
 
       <!-- Tab -->
-      <div class="container d-lg-none d-none d-sm-block  col-sm-6 p-0 ">
+      <!-- <div class="container d-lg-none d-none d-sm-block  col-sm-6 p-0 ">
         <img src="images/Cover/workingTab.png" class="w-100 rounded-2"  alt="">
+        </div> -->
+
+    <div class="col bg-secondary bg-opacity-10 px-0">
+      <div class="p-3">
+        <!-- paragraph -->
+        <div>
+          <h1 class="fw-bold d-none d-lg-block">Explore The elearning
+            Institute</h1>
+        
+            <!-- Mobile/Tab h1-->
+          <h1 class="fs-4 fw-bold d-block d-lg-none">Explore The elearning
+            Institute</h1>
+            <p class="text-secondary d-none d-lg-block">
+              There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words  which don't look even slightly believable. If you are going
+        to use a passage of Lorem Ipsum, you need to be sure.
+            </p>
+            <p class="text-secondary d-none d-lg-block">
+              Anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+        generators on the Internet tend to repeat predefined.
+            </p>
+        
+            <!-- mobile -->
+            <p class="d-lg-none">
+              There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words  which...<span class="text-primary">See More</span>
+        
+            </p>
         </div>
-
-    <div class="col-11 col-lg-7 col-sm-6 bg-secondary mx-auto bg-opacity-10  ">
-<div class="mx-3 mt-3 mx-lg-5 mt-lg-5 mx-sm-0">
-  <h1 class="fw-bold d-sm-none d-none d-lg-block">Explore The elearning
-    Institute</h1>
-
-    <!-- Mobile -->
-  <h1 class="fs-4 fw-bold d-lg-none d-none d-sm-block">Explore The elearning
-    Institute</h1>
-    <p class="text-secondary d-none d-lg-block">
-      There are many variations of passages of Lorem Ipsum available, but the
-majority have suffered alteration in some form, by injected humour, or
-randomised words  which don't look even slightly believable. If you are going
-to use a passage of Lorem Ipsum, you need to be sure.
-    </p>
-    <p class="text-secondary d-none d-lg-block">
-      Anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-generators on the Internet tend to repeat predefined.
-    </p>
-
-    <!-- mobile -->
-    <p class="d-lg-none d-inline">
-      There are many variations of passages of Lorem Ipsum available, but the
-majority have suffered alteration in some form, by injected humour, or
-randomised words  which...<span class="text-primary">See More</span>
-
-    </p>
-</div>
-
 <!-- statistics -->
 <div class="m-2 m-lg-5 my-4 d-flex  flex-lg-row gap-4 gap-lg-4 gap-sm-2 flex-sm-row flex-sm-wrap flex-wrap flex-lg-nowrap">
   <div>
@@ -452,6 +409,8 @@ randomised words  which...<span class="text-primary">See More</span>
 <div class="mx-lg-5 mx-2 mb-4 ">
   <button class="btn btn-primary  text-white px-4 py-2">Read More</button>
 </div>
+      </div>
+
     </div>
 
   </div>
@@ -704,7 +663,7 @@ randomised words  which...<span class="text-primary">See More</span>
 
   <div class="accordion accordion-flush" id="accordionExample">
 
-    <!-- one -->
+    <!--Item One -->
 
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
@@ -721,7 +680,7 @@ randomised words  which...<span class="text-primary">See More</span>
       </div>
     </div>
 
-<!-- Two -->
+<!--Item Two -->
 
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
@@ -738,7 +697,7 @@ randomised words  which...<span class="text-primary">See More</span>
       </div>
     </div>
 
-<!-- Three -->
+<!--Item Three -->
 
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingThree">
@@ -755,7 +714,7 @@ randomised words  which...<span class="text-primary">See More</span>
       </div>
     </div>
 
-<!-- Four -->
+<!--Item Four -->
 
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingFour">
